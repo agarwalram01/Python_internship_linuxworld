@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import google.generativeai as genai
 
-key = "AIzaSyBNt2sp4wTjiLI5hwk6EkIppLUSJCPQDC0"
+key = "ENTER KEY"
 genai.configure(api_key=key)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
@@ -42,4 +42,5 @@ if user_query:
     st.write("Bot:", response.text)
 
 if st.button("Click me"):
+
     st.success("Button Clicked!")
